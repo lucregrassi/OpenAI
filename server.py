@@ -1,3 +1,12 @@
+"""
+Authors:     Lucrezia Grassi (concept, design and code writing),
+             Carmine Tommaso Recchiuto (concept and design),
+             Antonio Sgorbissa (concept and design)
+Email:       lucrezia.grassi@edu.unige.it
+Affiliation: RICE, DIBRIS, University of Genoa, Italy
+
+This file connects to OpenAI services, getting the requests from the CAIR server
+"""
 import openai
 import json
 from flask import Flask, redirect, request, url_for
@@ -52,4 +61,4 @@ if __name__ == "__main__":
         else:
             print("The Ada model will be used")
             model = "text-ada-001"
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    app.run(host="0.0.0.0", port=5010, debug=False)
